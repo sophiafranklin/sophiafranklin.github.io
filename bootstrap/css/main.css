@@ -1,10 +1,16 @@
-body {
-    padding: 0;
-    margin: 0;
-    background: #E6E6FA;
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.body {
+  background: linear-gradient(to bottom, rgb(235, 232, 252), rgb(192, 175, 226));
 }
 .navbar {
-    background:#800080;
+    background:#B19CD7;
 }
 .nav-link,
 .navbar-brand {
@@ -64,29 +70,59 @@ body {
 .container {
   padding: 0 16px;
 }
-
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
-
 .title {
   color: grey;
 }
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+.profile-picture {
+  border-radius: 50%;
+}
+.left, .right {
+  background-color: lightblue;
+  
+  margin: 5px;
+  max-width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper {
+  background-color: lightpink;
+  
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+}
+.left {
+  align-items: center;
+  justify-content: center;
 }
 
-.button:hover {
-  background-color: #555;
+.profile-picture {
+  border-radius: 50%;
+}
+.contact {
+  list-style: none;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+.contact li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.contact a {
+  text-decoration: none;
+  padding: 4px;
+}
+
+.contact a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
