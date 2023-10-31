@@ -1,54 +1,26 @@
-body {
-  padding: 0;
-  margin: 0;
-  background: #E6E6FA;
-}
 .navbar {
-  background:#e0cbe0;
+  margin-bottom: 0;
+  border-radius: 0;
 }
-.nav-link,
-.navbar-brand {
-  color: #E6E6FA;
-  cursor: pointer;
+
+.row.content {height: 450px}
+
+.sidenav {
+  padding-top: 20px;
+  background-color: #E6E6FA;
+  height: 100%;
 }
-.nav-link {
-  margin-right: 1em !important;
+
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
 }
-.nav-link:hover {
-  color: #000;
+
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;} 
 }
-.navbar-collapse {
-  justify-content: flex-end;
-}
-.description {
-left: 50%;
-position: absolute;
-top: 45%;
-transform: translate(-50%, -55%);
-text-align: center;
-}
-.description h1 {
-color: #000000;
-}
-.description p {
-color: #000000;
-font-size: 1.3rem;
-line-height: 1.5;
-}
-.features {
-margin: 4em auto;
-padding: 1em;
-position: relative;
-}
-.feature-title {
-color: #333;
-font-size: 1.3rem;
-font-weight: 700;
-margin-bottom: 20px;
-text-transform: uppercase;
-}
-.features img {
--webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
--moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-margin-bottom: 16px;
